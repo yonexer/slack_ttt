@@ -18,7 +18,7 @@ def print_board(game):
                 ret += '     |'
         ret += '\n|---+---+---|\n'
     return 'Current:\n' + str(ret) + ' \n Legends\n "O": ' + game.player1 + '\n "X": ' + game.player2 + \
-                '.\n\nThe next move should be done by player: ' + game.next_player()
+                '.\n\nThe next player is: ' + game.next_player()
 
 def is_in_board(i, j):
     return 0 <= i < 3 and 0 <= j < 3
