@@ -97,6 +97,6 @@ class TTTForm(forms.Form):
 /ttt current - The current game
 /ttt place x y - Place a piece  at (x y). x y => [0, 3).
 /ttt help - Show this help page.
-/ttt reset - Stop the ongoing game.
+/ttt reset - Stop the current game.
         """
 

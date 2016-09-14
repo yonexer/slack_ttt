@@ -21,8 +21,8 @@ class CtlNewGame:
         game = get_game(channel_id)
 
         if has_ongoing_game(game):
-            raise Exception('Please wait')
+            raise Exception('Please wait for the current game')
 
         new_game(channel_id, player1, player2)
 
-        return 'New game started: ' + player1 + ' vs ' + player2 + '\n'
+        return 'New game started: ' + player1 + ' v.s. ' + player2 + '\n'
